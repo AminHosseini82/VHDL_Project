@@ -1,0 +1,1371 @@
+# راهنمای جامع پیاده‌سازی مرحله به مرحله مقاله
+
+## نمای کلی معماری سیستم
+
+سیستم پیشنهادی این مقاله سه بخش اصلی دارد که باید به ترتیب پیاده‌سازی شوند:
+
+```
+مدارات Benchmark → تولید Dataset → استخراج ویژگی با DNN → طبقه‌بندی
+```
+
+***
+
+## **بخش 1: تولید و آماده‌سازی Dataset**
+
+این بخش اساسی‌ترین و زمان‌برترین بخش پروژه است و شامل چندین زیربخش می‌باشد:
+
+### **مرحله 1.1: دریافت و آماده‌سازی مدارات Benchmark**
+
+**هدف**: تهیه مدارات استاندارد برای آزمایش
+
+**ابزارهای مورد نیاز**:
+- کد Verilog مدارات ISCAS-85 و ISCAS-89
+- دسترسی به TrustHub benchmark circuits
+
+**مراحل اجرایی**:
+
+1. **دانلود مدارات benchmark**:
+   - ISCAS-85: مدارات ترکیبی (c17, c432, c880, c1355, c1908, c2670, c3540, c5315, c6288, c7552 و...)
+   - ISCAS-89: مدارات ترتیبی (s27, s208, s298, s344, s349, s382, s386, s400, s420, s444, s510 و...)
+   - جمعاً 25 مدار مختلف[1]
+
+2. **بررسی و آماده‌سازی فایل‌های HDL**:
+   - اطمینان از صحت کدهای Verilog
+   - تهیه testbench برای هر مدار
+   - تهیه فایل‌های کتابخانه استاندارد (مثلاً SAED-EDK90nm)
+
+***
+
+### **مرحله 1.2: تولید پیاده‌سازی‌های مختلف (400 نوع برای هر مدار)**
+
+**هدف**: ایجاد تنوع در dataset با تغییر پارامترهای طراحی
+
+**ابزارهای مورد نیاز**:
+- Cadence Encounter یا Cadence Innovus (برای Place & Route)
+- Design Compiler یا Genus (برای Synthesis)
+- Library files (.lib, .lef)
+
+**پارامترهای متغیر**:[1]
+
+#### **پارامتر A: تغییر اندازه سطح تراشه**
+- محدوده: 1× تا 10× حداقل مساحت مورد نیاز
+- تعداد حالات پیشنهادی: 10 حالت
+- **نحوه پیاده‌سازی**:
+  ```tcl
+  # در Cadence Innovus
+  set min_area [calculate_minimum_area]
+  for {set factor 1} {$factor <= 10} {incr factor} {
+      set chip_width [expr sqrt($min_area * $factor)]
+      set chip_height $chip_width
+      floorPlan -site core -r $chip_height $chip_width
+  }
+  ```
+
+#### **پارامتر B: تغییر روش Placement**
+- Placement modes مختلف: standard, timing-driven, congestion-driven
+- تعداد حالات پیشنهادی: 4-5 حالت
+- **نحوه پیاده‌سازی**:
+  ```tcl
+  # Standard Placement
+  place_design -effort_level high
+  
+  # Timing-driven Placement
+  place_opt_design -effort high -optimize_dft
+  
+  # Congestion-driven Placement
+  place_design -congestion
+  ```
+
+#### **پارامتر C: تغییر نوع طراحی گیت‌ها**
+- انواع: Complementary Logic, Ratioed Logic, Transmission Gate, Pass Transistor, Dynamic Logic
+- تعداد حالات: 5 نوع
+- **نحوه پیاده‌سازی**:
+  - انتخاب کتابخانه‌های مختلف در مرحله Synthesis
+  - استفاده از constraint‌های مختلف
+
+**فرمول تولید 400 پیاده‌سازی**:
+```
+10 (chip area) × 4 (placement) × 5 (gate types) = 200
+→ هر ترکیب 2 بار تکرار شود = 400
+```
+
+***
+
+### **مرحله 1.3: استخراج اطلاعات Layout**
+
+**هدف**: استخراج اطلاعات فیزیکی و منطقی از هر پیاده‌سازی
+
+**ابزارهای مورد نیاز**:
+- Parser برای فایل‌های DEF (Design Exchange Format)
+- Parser برای فایل‌های LEF (Library Exchange Format)
+- ابزارهای Python/MATLAB برای پردازش
+
+**داده‌های مورد نیاز برای استخراج**:
+
+#### **A. اطلاعات White Space**
+
+**چگونگی محاسبه**:
+1. تقسیم layout به grid مربعی (مثلاً 100×100 یا 224×224)
+2. برای هر grid:
+   ```python
+   def calculate_white_space(grid):
+       total_grid_area = grid_width * grid_height
+       occupied_area = sum(cell_areas_in_grid)
+       white_space_ratio = (total_grid_area - occupied_area) / total_grid_area
+       return white_space_ratio
+   ```
+
+3. محاسبه توزیع جغرافیایی (معادله 6):[1]
+   ```python
+   import numpy as np
+   
+   def calculate_WSD(white_space_units, grid_center):
+       n = len(white_space_units)
+       xm, ym = grid_center
+       distances = []
+       for unit in white_space_units:
+           xi, yi = unit.center
+           dist = np.sqrt((xi - xm)**2 + (yi - ym)**2)
+           distances.append(dist)
+       WSD = np.sqrt(np.mean(np.square(distances)))
+       return WSD
+   ```
+
+#### **B. اطلاعات Routing Congestion**
+
+**چگونگی محاسبه**:
+1. استخراج اطلاعات routing از فایل DEF
+2. برای هر grid:
+   ```python
+   def calculate_routing_congestion(grid):
+       used_tracks = count_routing_tracks_in_grid(grid)
+       total_available_tracks = calculate_max_tracks(grid)
+       congestion = used_tracks / total_available_tracks
+       return congestion
+   ```
+
+**پارس کردن فایل DEF**:
+```python
+def parse_def_file(def_path):
+    with open(def_path, 'r') as f:
+        lines = f.readlines()
+    
+    routing_info = []
+    in_nets_section = False
+    
+    for line in lines:
+        if "NETS" in line:
+            in_nets_section = True
+        elif "END NETS" in line:
+            in_nets_section = False
+        elif in_nets_section and "+ ROUTED" in line:
+            # استخراج اطلاعات مسیریابی
+            routing_info.append(parse_routing_line(line))
+    
+    return routing_info
+```
+
+#### **C. اطلاعات Signal Activity**
+
+**ابزارها**:[1]
+- ODIN II (Verilog → BLIF)
+- ABC (BLIF optimization)
+- ACE (Activity extraction)
+
+**مراحل اجرایی**:
+
+1. **نصب و راه‌اندازی ODIN II**:
+   ```bash
+   # دانلود VTR (که شامل ODIN II است)
+   git clone https://github.com/verilog-to-routing/vtr-verilog-to-routing.git
+   cd vtr-verilog-to-routing
+   make
+   ```
+
+2. **تبدیل Verilog به BLIF**:
+   ```bash
+   ./ODIN_II -V circuit.v -o circuit.blif -a architecture.xml
+   ```
+
+3. **بهینه‌سازی با ABC**:
+   ```bash
+   abc -c "read_blif circuit.blif; strash; balance; rewrite; refactor; write_blif optimized.blif"
+   ```
+
+4. **استخراج Activity با ACE**:
+   ```bash
+   ace -b optimized.blif -n circuit.act -o output.act
+   ```
+
+5. **پردازش نتایج**:
+   ```python
+   def parse_ace_output(act_file):
+       activities = {}
+       with open(act_file, 'r') as f:
+           for line in f:
+               if line.startswith('.node'):
+                   parts = line.split()
+                   node_name = parts[1]
+                   signal_prob = float(parts[2])
+                   switching_activity = float(parts[3])
+                   activities[node_name] = {
+                       'signal_prob': signal_prob,
+                       'switching_act': switching_activity
+                   }
+       return activities
+   ```
+
+6. **محاسبه Transition Density** (معادله 7):[1]
+   ```python
+   def calculate_transition_density(node, simulation_time):
+       n_s = count_transitions(node, simulation_time)
+       D_s = n_s / simulation_time
+       return D_s
+   ```
+
+7. **محاسبه Dynamic Power** (معادله 9):[1]
+   ```python
+   def calculate_dynamic_power(node, V_DD, capacitance):
+       n_s = node.transition_count
+       T = simulation_time
+       P_av = V_DD * capacitance * V_DD * (n_s / 2) / T
+       return P_av
+   ```
+
+#### **D. اطلاعات Controllability و Observability**
+
+**ابزار اصلی**: SCOAP (Sandia Controllability Analysis Program)
+
+**روش جایگزین** (پیاده‌سازی دستی):
+
+1. **محاسبه Combinational Controllability**:
+   ```python
+   def calculate_CC0_CC1(gate, inputs):
+       if gate.type == 'AND':
+           CC0 = min([inp.CC0 for inp in inputs]) + 1
+           CC1 = sum([inp.CC1 for inp in inputs]) + 1
+       
+       elif gate.type == 'OR':
+           CC0 = sum([inp.CC0 for inp in inputs]) + 1
+           CC1 = min([inp.CC1 for inp in inputs]) + 1
+       
+       elif gate.type == 'NOT':
+           CC0 = inputs[0].CC1 + 1
+           CC1 = inputs[0].CC0 + 1
+       
+       elif gate.type == 'XOR':
+           CC0 = min(
+               inputs[0].CC0 + inputs[1].CC0,
+               inputs[0].CC1 + inputs[1].CC1
+           ) + 1
+           CC1 = min(
+               inputs[0].CC0 + inputs[1].CC1,
+               inputs[0].CC1 + inputs[1].CC0
+           ) + 1
+       
+       return CC0, CC1
+   ```
+
+2. **محاسبه Combinational Observability**:
+   ```python
+   def calculate_CO(gate, output_CO, inputs):
+       if gate.type in ['AND', 'NAND']:
+           for i, inp in enumerate(inputs):
+               other_inputs = [inputs[j] for j in range(len(inputs)) if j != i]
+               inp.CO = output_CO + min([other.CC1 for other in other_inputs]) + 1
+       
+       elif gate.type in ['OR', 'NOR']:
+           for i, inp in enumerate(inputs):
+               other_inputs = [inputs[j] for j in range(len(inputs)) if j != i]
+               inp.CO = output_CO + min([other.CC0 for other in other_inputs]) + 1
+       
+       elif gate.type == 'NOT':
+           inputs[0].CO = output_CO + 1
+   ```
+
+3. **ترکیب معیارها** (معادله 10):[1]
+   ```python
+   def calculate_testability_metric(node):
+       if node.is_combinational:
+           metric = np.sqrt(
+               node.CC0**2 + node.CC1**2 + node.CO**2
+           )
+       else:  # Sequential
+           metric = np.sqrt(
+               node.SC0**2 + node.SC1**2 + node.SO**2
+           )
+       return metric
+   ```
+
+#### **E. اطلاعات Path Delay**
+
+**محاسبه**:
+```python
+def calculate_path_delays(netlist):
+    # Static Timing Analysis
+    for path in all_paths_from_PI_to_PO:
+        delay = 0
+        for gate in path:
+            delay += gate.propagation_delay
+        path.total_delay = delay
+    
+    # شناسایی مسیرهای بحرانی
+    max_delay = max([p.total_delay for p in all_paths])
+    critical_paths = [p for p in all_paths if p.total_delay >= 0.9 * max_delay]
+    
+    return critical_paths
+```
+
+***
+
+### **مرحله 1.4: تبدیل به تصویر RGB**
+
+**هدف**: تبدیل اطلاعات عددی به representation بصری
+
+**الگوریتم تبدیل**:
+
+```python
+import numpy as np
+from PIL import Image
+
+def create_rgb_image(layout_data, grid_size=224):
+    """
+    تبدیل داده‌های layout به تصویر RGB
+    
+    Args:
+        layout_data: دیکشنری حاوی اطلاعات هر grid
+        grid_size: اندازه تصویر نهایی (224x224 برای VGG16)
+    
+    Returns:
+        numpy array با شکل (grid_size, grid_size, 3)
+    """
+    
+    # ایجاد آرایه خالی برای تصویر
+    image = np.zeros((grid_size, grid_size, 3), dtype=np.uint8)
+    
+    for i in range(grid_size):
+        for j in range(grid_size):
+            grid = layout_data[i][j]
+            
+            # کانال قرمز: White Space Ratio
+            # مقدار قبلاً نرمال شده است (0 تا 1)
+            red = int(grid['white_space_ratio'] * 255)
+            
+            # کانال سبز: ترکیب Testability + Signal Activity (معادله 11)
+            CC0_norm = grid['CC0'] / grid['max_CC0']
+            CC1_norm = grid['CC1'] / grid['max_CC1']
+            CO_norm = grid['CO'] / grid['max_CO']
+            act_norm = grid['activity'] / grid['max_activity']
+            
+            G_norm = np.sqrt(
+                (CC0_norm + CC1_norm + CO_norm)**2 + act_norm**2
+            )
+            green = int(G_norm * 255)
+            
+            # کانال آبی: Routing Congestion
+            # مقدار قبلاً نرمال شده است (0 تا 1)
+            blue = int(grid['routing_congestion'] * 255)
+            
+            # تخصیص به پیکسل
+            image[i, j] = [red, green, blue]
+    
+    return image
+
+# ذخیره تصویر
+def save_image(image_array, filename):
+    img = Image.fromarray(image_array, 'RGB')
+    img.save(filename)
+```
+
+**مثال استفاده**:
+```python
+# برای هر پیاده‌سازی
+for circuit_idx in range(25):
+    for impl_idx in range(400):
+        # استخراج داده‌ها
+        layout_data = extract_all_features(circuit_idx, impl_idx)
+        
+        # تبدیل به تصویر
+        rgb_image = create_rgb_image(layout_data, grid_size=224)
+        
+        # ذخیره
+        filename = f"dataset/circuit_{circuit_idx}_impl_{impl_idx}.png"
+        save_image(rgb_image, filename)
+```
+
+***
+
+### **مرحله 1.5: برچسب‌زنی (Labeling)**
+
+**هدف**: تعیین کلاس آسیب‌پذیری (Low, Medium, High) برای هر تصویر
+
+**الگوریتم برچسب‌زنی**:[1]
+
+```python
+def calculate_vulnerability_score(layout_data, trojan_types):
+    """
+    محاسبه امتیاز آسیب‌پذیری بر اساس سهولت درج تروجان
+    
+    Args:
+        layout_data: اطلاعات layout
+        trojan_types: لیست انواع تروجان‌های مورد بررسی
+    
+    Returns:
+        امتیاز کل (0 تا 100)
+    """
+    total_score = 0
+    
+    for trojan in trojan_types:
+        # بررسی فضای سفید کافی
+        required_white_space = trojan.required_area
+        available_white_space = find_connected_white_space(layout_data)
+        
+        if available_white_space < required_white_space:
+            # درج غیرممکن
+            score = 0
+        else:
+            # بررسی امکان trigger formation
+            trigger_candidates = find_trigger_candidates(layout_data, trojan)
+            
+            if len(trigger_candidates) == 0:
+                score = 0
+            else:
+                # محاسبه امتیاز بر اساس فاصله trigger-payload
+                max_trigger_score = 0
+                for trigger in trigger_candidates:
+                    payload_distance = calculate_distance(
+                        trigger.location,
+                        trojan.payload_location
+                    )
+                    routing_difficulty = assess_routing_difficulty(
+                        trigger.location,
+                        trojan.payload_location,
+                        layout_data
+                    )
+                    
+                    trigger_score = 100 / (1 + payload_distance + routing_difficulty)
+                    max_trigger_score = max(max_trigger_score, trigger_score)
+                
+                score = max_trigger_score
+        
+        total_score += score
+    
+    return total_score
+
+def find_trigger_candidates(layout_data, trojan):
+    """
+    یافتن گره‌های مناسب برای trigger
+    """
+    candidates = []
+    
+    for node in layout_data.nodes:
+        # بررسی معیارها
+        low_activity = node.switching_activity < THRESHOLD_ACTIVITY
+        low_testability = (node.CC0 + node.CC1 + node.CO) > THRESHOLD_TESTABILITY
+        not_critical = node not in layout_data.critical_paths
+        has_routing = check_routing_availability(node, layout_data)
+        
+        if low_activity and low_testability and not_critical and has_routing:
+            candidates.append(node)
+    
+    return candidates
+
+def assign_labels(all_scores):
+    """
+    تخصیص برچسب‌های Low, Medium, High
+    """
+    sorted_scores = np.sort(all_scores)
+    percentile_75 = np.percentile(sorted_scores, 75)
+    percentile_25 = np.percentile(sorted_scores, 25)
+    
+    labels = []
+    for score in all_scores:
+        if score > percentile_75:
+            labels.append('High')  # آسیب‌پذیری بالا
+        elif score < percentile_25:
+            labels.append('Low')   # آسیب‌پذیری پایین
+        else:
+            labels.append('Medium')  # آسیب‌پذیری متوسط
+    
+    return labels
+
+# اجرای برچسب‌زنی
+all_scores = []
+for image_path in all_images:
+    layout_data = load_layout_data(image_path)
+    score = calculate_vulnerability_score(layout_data, trojan_types)
+    all_scores.append(score)
+
+labels = assign_labels(all_scores)
+
+# ذخیره labels
+import pandas as pd
+df = pd.DataFrame({
+    'image_path': all_images,
+    'score': all_scores,
+    'label': labels
+})
+df.to_csv('dataset_labels.csv', index=False)
+```
+
+***
+
+### **خروجی بخش 1**
+
+در پایان این بخش شما باید داشته باشید:
+- **10,000 تصویر RGB** با اندازه 224×224 پیکسل
+- **فایل CSV** حاوی برچسب‌ها (Low/Medium/High) برای هر تصویر
+- **فایل metadata** حاوی اطلاعات تکمیلی هر پیاده‌سازی
+
+**ساختار دایرکتوری پیشنهادی**:
+```
+project/
+├── dataset/
+│   ├── images/
+│   │   ├── circuit_0_impl_0.png
+│   │   ├── circuit_0_impl_1.png
+│   │   └── ...
+│   ├── labels.csv
+│   └── metadata/
+│       ├── circuit_0_impl_0.json
+│       └── ...
+├── raw_data/
+│   ├── def_files/
+│   ├── lef_files/
+│   └── netlist_files/
+└── scripts/
+    ├── extract_features.py
+    ├── create_images.py
+    └── label_dataset.py
+```
+
+***
+
+## **بخش 2: استخراج ویژگی با DNN پیش‌آموزش‌دیده**
+
+### **مرحله 2.1: انتخاب شبکه پیش‌آموزش‌دیده**
+
+**شبکه‌های پیشنهادی در مقاله**:[1]
+- AlexNet
+- GoogleNet (Inception v1)
+- VGG16
+- ResNet
+- DenseNet
+
+**معیارهای انتخاب**:
+- دقت روی ImageNet
+- تعداد پارامترها
+- سرعت استخراج ویژگی
+- سازگاری با اندازه ورودی
+
+### **مرحله 2.2: پیاده‌سازی با PyTorch**
+
+```python
+import torch
+import torch.nn as nn
+from torchvision import models, transforms
+from torch.utils.data import Dataset, DataLoader
+from PIL import Image
+import pandas as pd
+import numpy as np
+
+# 1. ایجاد Dataset سفارشی
+class HTDataset(Dataset):
+    def __init__(self, csv_file, transform=None):
+        """
+        Args:
+            csv_file: مسیر فایل CSV حاوی image paths و labels
+            transform: تبدیلات مورد نیاز برای preprocessing
+        """
+        self.data = pd.read_csv(csv_file)
+        self.transform = transform
+        
+        # تبدیل labels به اعداد
+        self.label_map = {'Low': 0, 'Medium': 1, 'High': 2}
+        self.data['label_encoded'] = self.data['label'].map(self.label_map)
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __getitem__(self, idx):
+        img_path = self.data.iloc[idx]['image_path']
+        label = self.data.iloc[idx]['label_encoded']
+        
+        # بارگذاری تصویر
+        image = Image.open(img_path).convert('RGB')
+        
+        if self.transform:
+            image = self.transform(image)
+        
+        return image, label
+
+# 2. تعریف تبدیلات
+transform = transforms.Compose([
+    transforms.Resize((224, 224)),  # تغییر اندازه به 224x224
+    transforms.ToTensor(),           # تبدیل به tensor
+    transforms.Normalize(            # نرمالیزاسیون با میانگین و انحراف ImageNet
+        mean=[0.485, 0.456, 0.406],
+        std=[0.229, 0.224, 0.225]
+    )
+])
+
+# 3. ایجاد DataLoader
+dataset = HTDataset('dataset/labels.csv', transform=transform)
+
+# تقسیم dataset
+train_size = int(0.7 * len(dataset))
+val_size = int(0.15 * len(dataset))
+test_size = len(dataset) - train_size - val_size
+
+train_dataset, val_dataset, test_dataset = torch.utils.data.random_split(
+    dataset, [train_size, val_size, test_size]
+)
+
+train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=4)
+val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False, num_workers=4)
+test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4)
+
+# 4. بارگذاری مدل پیش‌آموزش‌دیده
+class FeatureExtractor(nn.Module):
+    def __init__(self, model_name='vgg16'):
+        super(FeatureExtractor, self).__init__()
+        
+        if model_name == 'vgg16':
+            base_model = models.vgg16(pretrained=True)
+            # حذف classifier و استفاده از features
+            self.features = base_model.features
+            self.avgpool = base_model.avgpool
+            # خروجی: 512 * 7 * 7 = 25088 features
+            self.feature_dim = 25088
+        
+        elif model_name == 'resnet50':
+            base_model = models.resnet50(pretrained=True)
+            # حذف fully connected layer آخر
+            self.features = nn.Sequential(*list(base_model.children())[:-1])
+            self.feature_dim = 2048
+        
+        elif model_name == 'alexnet':
+            base_model = models.alexnet(pretrained=True)
+            self.features = base_model.features
+            self.avgpool = base_model.avgpool
+            self.feature_dim = 9216
+        
+        elif model_name == 'googlenet':
+            base_model = models.googlenet(pretrained=True)
+            self.features = nn.Sequential(*list(base_model.children())[:-1])
+            self.feature_dim = 1024
+        
+        # freeze کردن وزن‌های پیش‌آموزش‌دیده
+        for param in self.features.parameters():
+            param.requires_grad = False
+    
+    def forward(self, x):
+        x = self.features(x)
+        if hasattr(self, 'avgpool'):
+            x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        return x
+
+# 5. استخراج ویژگی‌ها از تمام dataset
+def extract_features(model, dataloader, device):
+    """
+    استخراج ویژگی‌ها از تمام تصاویر
+    
+    Returns:
+        features: numpy array با شکل (N, feature_dim)
+        labels: numpy array با شکل (N,)
+    """
+    model.eval()
+    all_features = []
+    all_labels = []
+    
+    with torch.no_grad():
+        for images, labels in dataloader:
+            images = images.to(device)
+            features = model(images)
+            
+            all_features.append(features.cpu().numpy())
+            all_labels.append(labels.numpy())
+    
+    all_features = np.vstack(all_features)
+    all_labels = np.hstack(all_labels)
+    
+    return all_features, all_labels
+
+# اجرا
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+feature_extractor = FeatureExtractor(model_name='vgg16').to(device)
+
+# استخراج ویژگی‌ها
+print("Extracting training features...")
+train_features, train_labels = extract_features(
+    feature_extractor, train_loader, device
+)
+
+print("Extracting validation features...")
+val_features, val_labels = extract_features(
+    feature_extractor, val_loader, device
+)
+
+print("Extracting test features...")
+test_features, test_labels = extract_features(
+    feature_extractor, test_loader, device
+)
+
+# ذخیره ویژگی‌ها
+np.save('features/train_features_vgg16.npy', train_features)
+np.save('features/train_labels.npy', train_labels)
+np.save('features/val_features_vgg16.npy', val_features)
+np.save('features/val_labels.npy', val_labels)
+np.save('features/test_features_vgg16.npy', test_features)
+np.save('features/test_labels.npy', test_labels)
+
+print(f"Feature shape: {train_features.shape}")
+print(f"Labels shape: {train_labels.shape}")
+```
+
+### **مرحله 2.3: مقایسه شبکه‌های مختلف**
+
+```python
+# استخراج با چند شبکه مختلف
+models_to_test = ['vgg16', 'resnet50', 'alexnet', 'googlenet']
+
+for model_name in models_to_test:
+    print(f"\nExtracting features with {model_name}...")
+    
+    feature_extractor = FeatureExtractor(model_name=model_name).to(device)
+    train_features, _ = extract_features(feature_extractor, train_loader, device)
+    
+    # ذخیره
+    np.save(f'features/train_features_{model_name}.npy', train_features)
+    print(f"{model_name} feature dimension: {train_features.shape[1]}")
+```
+
+### **خروجی بخش 2**
+
+- **فایل‌های NumPy** حاوی ویژگی‌های استخراج‌شده:
+  - `train_features.npy`: ویژگی‌های train (شکل: N_train × feature_dim)
+  - `val_features.npy`: ویژگی‌های validation
+  - `test_features.npy`: ویژگی‌های test
+  - `*_labels.npy`: برچسب‌های متناظر
+
+***
+
+## **بخش 3: طبقه‌بندی**
+
+این بخش شامل پیاده‌سازی و آزمایش چهار طبقه‌بند‌کننده مختلف است.
+
+### **مرحله 3.1: Ensemble Classifier (Bagging + Boosting)**
+
+```python
+from sklearn.ensemble import (
+    BaggingClassifier,
+    GradientBoostingClassifier,
+    RandomForestClassifier,
+    AdaBoostClassifier
+)
+from sklearn.tree import DecisionTreeClassifier
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import numpy as np
+
+# بارگذاری داده‌ها
+train_features = np.load('features/train_features_vgg16.npy')
+train_labels = np.load('features/train_labels.npy')
+val_features = np.load('features/val_features_vgg16.npy')
+val_labels = np.load('features/val_labels.npy')
+test_features = np.load('features/test_features_vgg16.npy')
+test_labels = np.load('features/test_labels.npy')
+
+# 1. Bagging Ensemble
+print("Training Bagging Ensemble...")
+bagging = BaggingClassifier(
+    base_estimator=DecisionTreeClassifier(max_depth=10),
+    n_estimators=100,
+    max_samples=0.632,  # 63.2% برای هر bag (مطابق مقاله)
+    bootstrap=True,
+    random_state=42,
+    n_jobs=-1
+)
+bagging.fit(train_features, train_labels)
+
+# ارزیابی
+bagging_pred = bagging.predict(test_features)
+bagging_accuracy = accuracy_score(test_labels, bagging_pred)
+print(f"Bagging Accuracy: {bagging_accuracy:.4f}")
+
+# 2. Gradient Boosting
+print("\nTraining Gradient Boosting...")
+gb = GradientBoostingClassifier(
+    n_estimators=100,
+    learning_rate=0.1,
+    max_depth=5,
+    random_state=42
+)
+gb.fit(train_features, train_labels)
+
+gb_pred = gb.predict(test_features)
+gb_accuracy = accuracy_score(test_labels, gb_pred)
+print(f"Gradient Boosting Accuracy: {gb_accuracy:.4f}")
+
+# 3. XGBoost (پیشنهادی برای بهترین نتیجه)
+print("\nTraining XGBoost...")
+xgb = XGBClassifier(
+    n_estimators=200,
+    learning_rate=0.1,
+    max_depth=6,
+    subsample=0.8,
+    colsample_bytree=0.8,
+    random_state=42,
+    use_label_encoder=False,
+    eval_metric='mlogloss'
+)
+xgb.fit(
+    train_features, train_labels,
+    eval_set=[(val_features, val_labels)],
+    early_stopping_rounds=10,
+    verbose=False
+)
+
+xgb_pred = xgb.predict(test_features)
+xgb_accuracy = accuracy_score(test_labels, xgb_pred)
+print(f"XGBoost Accuracy: {xgb_accuracy:.4f}")
+
+# 4. Random Forest (نوعی Bagging)
+print("\nTraining Random Forest...")
+rf = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=15,
+    min_samples_split=5,
+    random_state=42,
+    n_jobs=-1
+)
+rf.fit(train_features, train_labels)
+
+rf_pred = rf.predict(test_features)
+rf_accuracy = accuracy_score(test_labels, rf_pred)
+print(f"Random Forest Accuracy: {rf_accuracy:.4f}")
+
+# 5. Voting Ensemble (ترکیب همه)
+from sklearn.ensemble import VotingClassifier
+
+voting = VotingClassifier(
+    estimators=[
+        ('bagging', bagging),
+        ('gb', gb),
+        ('xgb', xgb),
+        ('rf', rf)
+    ],
+    voting='soft'  # استفاده از احتمالات
+)
+voting.fit(train_features, train_labels)
+
+voting_pred = voting.predict(test_features)
+voting_accuracy = accuracy_score(test_labels, voting_pred)
+print(f"\nVoting Ensemble Accuracy: {voting_accuracy:.4f}")
+
+# گزارش نهایی
+print("\n" + "="*50)
+print("Ensemble Classifiers Summary:")
+print("="*50)
+results = {
+    'Bagging': bagging_accuracy,
+    'Gradient Boosting': gb_accuracy,
+    'XGBoost': xgb_accuracy,
+    'Random Forest': rf_accuracy,
+    'Voting': voting_accuracy
+}
+for name, acc in results.items():
+    print(f"{name:20s}: {acc:.4f} ({acc*100:.2f}%)")
+
+# بهترین مدل
+best_model_name = max(results, key=results.get)
+best_accuracy = results[best_model_name]
+print(f"\nBest Ensemble: {best_model_name} with {best_accuracy:.4f}")
+```
+
+### **مرحله 3.2: Naïve Bayes Classifier**
+
+```python
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report
+
+# آموزش Gaussian Naïve Bayes
+print("Training Naïve Bayes...")
+nb = GaussianNB()
+nb.fit(train_features, train_labels)
+
+# پیش‌بینی
+nb_pred = nb.predict(test_features)
+nb_probs = nb.predict_proba(test_features)
+
+# ارزیابی
+nb_accuracy = accuracy_score(test_labels, nb_pred)
+print(f"Naïve Bayes Accuracy: {nb_accuracy:.4f} ({nb_accuracy*100:.2f}%)")
+
+# گزارش تفصیلی
+print("\nClassification Report:")
+print(classification_report(
+    test_labels, nb_pred,
+    target_names=['Low', 'Medium', 'High']
+))
+
+# محاسبه TPR و TNR برای هر کلاس
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(test_labels, nb_pred)
+print("\nConfusion Matrix:")
+print(cm)
+
+# محاسبه TPR و TNR برای هر کلاس
+for i, class_name in enumerate(['Low', 'Medium', 'High']):
+    TP = cm[i, i]
+    FN = cm[i, :].sum() - TP
+    FP = cm[:, i].sum() - TP
+    TN = cm.sum() - TP - FN - FP
+    
+    TPR = TP / (TP + FN) if (TP + FN) > 0 else 0  # معادله 15
+    TNR = TN / (TN + FP) if (TN + FP) > 0 else 0  # معادله 16
+    
+    print(f"\nClass {class_name}:")
+    print(f"  TPR (Sensitivity): {TPR:.4f}")
+    print(f"  TNR (Specificity): {TNR:.4f}")
+```
+
+### **مرحله 3.3: Support Vector Machine (SVM)**
+
+```python
+from sklearn.svm import SVC
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
+
+# نرمالیزاسیون (مهم برای SVM)
+scaler = StandardScaler()
+train_features_scaled = scaler.fit_transform(train_features)
+val_features_scaled = scaler.transform(val_features)
+test_features_scaled = scaler.transform(test_features)
+
+# 1. SVM با kernel خطی
+print("Training Linear SVM...")
+svm_linear = SVC(kernel='linear', C=1.0, random_state=42)
+svm_linear.fit(train_features_scaled, train_labels)
+
+linear_pred = svm_linear.predict(test_features_scaled)
+linear_accuracy = accuracy_score(test_labels, linear_pred)
+print(f"Linear SVM Accuracy: {linear_accuracy:.4f}")
+
+# 2. SVM با RBF kernel (پیشنهادی برای بهترین نتیجه)
+print("\nTraining RBF SVM...")
+svm_rbf = SVC(kernel='rbf', C=10.0, gamma='scale', random_state=42)
+svm_rbf.fit(train_features_scaled, train_labels)
+
+rbf_pred = svm_rbf.predict(test_features_scaled)
+rbf_accuracy = accuracy_score(test_labels, rbf_pred)
+print(f"RBF SVM Accuracy: {rbf_accuracy:.4f}")
+
+# 3. SVM با polynomial kernel
+print("\nTraining Polynomial SVM...")
+svm_poly = SVC(kernel='poly', degree=3, C=1.0, random_state=42)
+svm_poly.fit(train_features_scaled, train_labels)
+
+poly_pred = svm_poly.predict(test_features_scaled)
+poly_accuracy = accuracy_score(test_labels, poly_pred)
+print(f"Polynomial SVM Accuracy: {poly_accuracy:.4f}")
+
+# 4. Grid Search برای یافتن بهترین hyperparameters
+print("\nPerforming Grid Search...")
+param_grid = {
+    'C': [0.1, 1, 10, 100],
+    'gamma': ['scale', 'auto', 0.001, 0.01, 0.1],
+    'kernel': ['rbf', 'poly']
+}
+
+grid_search = GridSearchCV(
+    SVC(random_state=42),
+    param_grid,
+    cv=5,
+    scoring='accuracy',
+    n_jobs=-1,
+    verbose=1
+)
+grid_search.fit(train_features_scaled, train_labels)
+
+print(f"\nBest parameters: {grid_search.best_params_}")
+print(f"Best cross-validation score: {grid_search.best_score_:.4f}")
+
+# بهترین مدل
+best_svm = grid_search.best_estimator_
+best_pred = best_svm.predict(test_features_scaled)
+best_accuracy = accuracy_score(test_labels, best_pred)
+print(f"Best SVM Test Accuracy: {best_accuracy:.4f} ({best_accuracy*100:.2f}%)")
+
+# ذخیره مدل
+import joblib
+joblib.dump(best_svm, 'models/best_svm.pkl')
+joblib.dump(scaler, 'models/scaler.pkl')
+```
+
+### **مرحله 3.4: K-Nearest Neighbors (KNN)**
+
+```python
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+
+# نرمالیزاسیون (مهم برای KNN)
+scaler = StandardScaler()
+train_features_scaled = scaler.fit_transform(train_features)
+test_features_scaled = scaler.transform(test_features)
+
+# 1. یافتن بهترین K
+k_range = range(1, 31)
+k_scores = []
+
+print("Finding optimal K...")
+for k in k_range:
+    knn = KNeighborsClassifier(n_neighbors=k, metric='euclidean', n_jobs=-1)
+    knn.fit(train_features_scaled, train_labels)
+    pred = knn.predict(val_features_scaled)
+    acc = accuracy_score(val_labels, pred)
+    k_scores.append(acc)
+    if k % 5 == 0:
+        print(f"K={k}: Validation Accuracy = {acc:.4f}")
+
+# رسم نمودار
+plt.figure(figsize=(10, 6))
+plt.plot(k_range, k_scores, marker='o')
+plt.xlabel('K (Number of Neighbors)')
+plt.ylabel('Validation Accuracy')
+plt.title('KNN: K vs Accuracy')
+plt.grid(True)
+plt.savefig('results/knn_k_selection.png')
+plt.close()
+
+# انتخاب بهترین K
+best_k = k_range[np.argmax(k_scores)]
+best_val_acc = max(k_scores)
+print(f"\nBest K: {best_k} with validation accuracy: {best_val_acc:.4f}")
+
+# 2. آموزش با بهترین K و معیارهای مختلف فاصله
+distance_metrics = ['euclidean', 'manhattan', 'minkowski', 'chebyshev']
+results = {}
+
+for metric in distance_metrics:
+    print(f"\nTraining KNN with {metric} distance...")
+    knn = KNeighborsClassifier(
+        n_neighbors=best_k,
+        metric=metric,
+        weights='distance',  # وزن‌دهی بر اساس فاصله
+        n_jobs=-1
+    )
+    knn.fit(train_features_scaled, train_labels)
+    
+    pred = knn.predict(test_features_scaled)
+    acc = accuracy_score(test_labels, pred)
+    results[metric] = acc
+    print(f"{metric} KNN Accuracy: {acc:.4f} ({acc*100:.2f}%)")
+
+# بهترین metric
+best_metric = max(results, key=results.get)
+best_knn_accuracy = results[best_metric]
+print(f"\nBest KNN: {best_metric} with K={best_k}, Accuracy: {best_knn_accuracy:.4f}")
+
+# آموزش مدل نهایی
+final_knn = KNeighborsClassifier(
+    n_neighbors=best_k,
+    metric=best_metric,
+    weights='distance',
+    n_jobs=-1
+)
+final_knn.fit(train_features_scaled, train_labels)
+
+# پیش‌بینی و ارزیابی نهایی
+final_pred = final_knn.predict(test_features_scaled)
+final_accuracy = accuracy_score(test_labels, final_pred)
+
+print("\n" + "="*50)
+print("Final KNN Results:")
+print("="*50)
+print(f"K: {best_k}")
+print(f"Distance Metric: {best_metric}")
+print(f"Test Accuracy: {final_accuracy:.4f} ({final_accuracy*100:.2f}%)")
+
+# Confusion Matrix
+cm = confusion_matrix(test_labels, final_pred)
+print("\nConfusion Matrix:")
+print(cm)
+
+# گزارش classification
+print("\nClassification Report:")
+print(classification_report(
+    test_labels, final_pred,
+    target_names=['Low', 'Medium', 'High']
+))
+```
+
+***
+
+## **بخش 4: ارزیابی و مقایسه نهایی**
+
+### **مرحله 4.1: جمع‌آوری نتایج همه مدل‌ها**
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# بارگذاری پیش‌بینی‌های همه مدل‌ها
+predictions = {
+    'Ensemble': ensemble_pred,
+    'SVM': svm_pred,
+    'KNN': knn_pred,
+    'Naïve Bayes': nb_pred
+}
+
+# محاسبه معیارها
+results_df = []
+
+for model_name, pred in predictions.items():
+    accuracy = accuracy_score(test_labels, pred)
+    
+    # محاسبه TPR و TNR برای هر کلاس
+    cm = confusion_matrix(test_labels, pred)
+    
+    tpr_list = []
+    tnr_list = []
+    
+    for i in range(3):  # سه کلاس
+        TP = cm[i, i]
+        FN = cm[i, :].sum() - TP
+        FP = cm[:, i].sum() - TP
+        TN = cm.sum() - TP - FN - FP
+        
+        TPR = TP / (TP + FN) if (TP + FN) > 0 else 0
+        TNR = TN / (TN + FP) if (TN + FP) > 0 else 0
+        
+        tpr_list.append(TPR)
+        tnr_list.append(TNR)
+    
+    results_df.append({
+        'Model': model_name,
+        'Accuracy': accuracy * 100,
+        'TPR_Low': tpr_list[0] * 100,
+        'TPR_Medium': tpr_list[1] * 100,
+        'TPR_High': tpr_list[2] * 100,
+        'TNR_Low': tnr_list[0] * 100,
+        'TNR_Medium': tnr_list[1] * 100,
+        'TNR_High': tnr_list[2] * 100,
+        'Avg_TPR': np.mean(tpr_list) * 100,
+        'Avg_TNR': np.mean(tnr_list) * 100
+    })
+
+results_df = pd.DataFrame(results_df)
+
+# نمایش نتایج
+print("\n" + "="*80)
+print("FINAL COMPARISON OF ALL CLASSIFIERS")
+print("="*80)
+print(results_df.to_string(index=False))
+
+# ذخیره
+results_df.to_csv('results/classifier_comparison.csv', index=False)
+```
+
+### **مرحله 4.2: رسم Confusion Matrix برای همه مدل‌ها**
+
+```python
+# رسم Confusion Matrix برای هر مدل
+fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+axes = axes.flatten()
+
+class_names = ['Low', 'Medium', 'High']
+
+for idx, (model_name, pred) in enumerate(predictions.items()):
+    cm = confusion_matrix(test_labels, pred)
+    
+    # نرمالیزاسیون
+    cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+    
+    sns.heatmap(
+        cm_normalized,
+        annot=True,
+        fmt='.2f',
+        cmap='Blues',
+        xticklabels=class_names,
+        yticklabels=class_names,
+        ax=axes[idx],
+        cbar_kws={'label': 'Normalized Count'}
+    )
+    
+    accuracy = accuracy_score(test_labels, pred)
+    axes[idx].set_title(f'{model_name}\nAccuracy: {accuracy:.4f} ({accuracy*100:.2f}%)')
+    axes[idx].set_ylabel('True Label')
+    axes[idx].set_xlabel('Predicted Label')
+
+plt.tight_layout()
+plt.savefig('results/confusion_matrices_all.png', dpi=300)
+plt.close()
+
+print("\nConfusion matrices saved to 'results/confusion_matrices_all.png'")
+```
+
+### **مرحله 4.3: مقایسه با روش‌های قبلی**
+
+```python
+# داده‌های مقایسه با مطالعات قبلی (از مقاله)
+comparison_data = {
+    'Method': [
+        'SVM (Proposed)',
+        'Ensemble (Proposed)',
+        'KNN (Proposed)',
+        'Naïve Bayes (Proposed)',
+        'Trippel et al. [21]',
+        'Salmani et al. [37]',
+        'Bakhshizadeh et al. [38]'
+    ],
+    'Accuracy': [96.69, 96.12, 94.60, 86.81, 72.00, 65.50, 60.35],
+    'Type': ['Proposed', 'Proposed', 'Proposed', 'Proposed', 
+             'Previous', 'Previous', 'Previous']
+}
+
+comparison_df = pd.DataFrame(comparison_data)
+
+# رسم نمودار مقایسه
+plt.figure(figsize=(12, 6))
+colors = ['#2ecc71' if t == 'Proposed' else '#e74c3c' 
+          for t in comparison_df['Type']]
+bars = plt.barh(comparison_df['Method'], comparison_df['Accuracy'], color=colors)
+
+# افزودن مقادیر روی میله‌ها
+for i, bar in enumerate(bars):
+    width = bar.get_width()
+    plt.text(width + 1, bar.get_y() + bar.get_height()/2, 
+             f'{width:.2f}%',
+             ha='left', va='center', fontsize=10, fontweight='bold')
+
+plt.xlabel('Accuracy (%)', fontsize=12)
+plt.title('Comparison with Previous Studies', fontsize=14, fontweight='bold')
+plt.xlim(0, 100)
+plt.grid(axis='x', alpha=0.3)
+
+# Legend
+from matplotlib.patches import Patch
+legend_elements = [
+    Patch(facecolor='#2ecc71', label='Proposed Methods'),
+    Patch(facecolor='#e74c3c', label='Previous Studies')
+]
+plt.legend(handles=legend_elements, loc='lower right')
+
+plt.tight_layout()
+plt.savefig('results/comparison_with_previous.png', dpi=300)
+plt.close()
+
+print("\nComparison chart saved to 'results/comparison_with_previous.png'")
+
+# محاسبه improvement
+best_proposed = comparison_df[comparison_df['Type'] == 'Proposed']['Accuracy'].max()
+best_previous = comparison_df[comparison_df['Type'] == 'Previous']['Accuracy'].max()
+improvement = best_proposed - best_previous
+
+print(f"\nBest Proposed Method: {best_proposed:.2f}%")
+print(f"Best Previous Study: {best_previous:.2f}%")
+print(f"Improvement: {improvement:.2f}% ({improvement/best_previous*100:.1f}% relative improvement)")
+```
+
+### **مرحله 4.4: تحلیل Feature Importance**
+
+```python
+# برای Ensemble (مثلاً Random Forest)
+if hasattr(best_ensemble_model, 'feature_importances_'):
+    importances = best_ensemble_model.feature_importances_
+    
+    # Top 50 features
+    top_indices = np.argsort(importances)[-50:]
+    
+    plt.figure(figsize=(10, 12))
+    plt.barh(range(50), importances[top_indices])
+    plt.ylabel('Feature Index')
+    plt.xlabel('Importance')
+    plt.title('Top 50 Most Important Features (Ensemble Model)')
+    plt.tight_layout()
+    plt.savefig('results/feature_importance.png', dpi=300)
+    plt.close()
+    
+    print("\nFeature importance plot saved.")
+```
+
+***
+
+## **خلاصه کامل مراحل پیاده‌سازی**
+
+### **Timeline تخمینی**:
+
+| مرحله | شرح | زمان تخمینی |
+|-------|-----|-------------|
+| 1.1 | دریافت benchmark circuits | 1-2 روز |
+| 1.2 | تولید 10,000 پیاده‌سازی | 2-4 هفته |
+| 1.3 | استخراج features (white space, routing, etc.) | 1-2 هفته |
+| 1.4 | تبدیل به تصویر RGB | 2-3 روز |
+| 1.5 | برچسب‌زنی dataset | 1 هفته |
+| 2 | استخراج ویژگی با DNN | 1-2 روز |
+| 3 | آموزش و ارزیابی classifiers | 3-5 روز |
+| 4 | تحلیل و مقایسه نهایی | 2-3 روز |
+| **جمع کل** | | **6-10 هفته** |
+
+### **ابزارهای نرم‌افزاری مورد نیاز**:
+
+**نرم‌افزارهای تجاری**:
+- Cadence Encounter/Innovus (Layout & P&R)
+- Synopsys Design Compiler (Synthesis)
+- کتابخانه‌های استاندارد (SAED-EDK90nm یا مشابه)
+
+**ابزارهای Open-Source**:
+- ODIN II (Verilog to BLIF)
+- ABC (Logic optimization)
+- ACE (Activity extraction)
+- VTR (Verilog-to-Routing)
+
+**Python Libraries**:
+```bash
+pip install torch torchvision
+pip install scikit-learn xgboost
+pip install pandas numpy matplotlib seaborn
+pip install pillow opencv-python
+```
+
+### **سخت‌افزار پیشنهادی**:
+- **CPU**: حداقل 16 cores (برای parallel processing)
+- **RAM**: حداقل 64GB (برای dataset بزرگ)
+- **GPU**: NVIDIA GPU با حداقل 8GB VRAM (برای DNN)
+- **Storage**: حداقل 500GB SSD
+
+***
+
+## **نکات مهم و چالش‌ها**
+
+### **چالش‌های احتمالی**:
+
+1. **دسترسی به ابزارهای تجاری**: Cadence و Synopsys بسیار گران هستند
+   - **راه‌حل**: استفاده از نسخه‌های دانشگاهی یا جایگزین‌های open-source
+
+2. **زمان‌بر بودن تولید dataset**: 10,000 پیاده‌سازی زمان زیادی می‌برد
+   - **راه‌حل**: شروع با dataset کوچک‌تر (مثلاً 2,000-3,000)
+
+3. **پیچیدگی استخراج features**: محاسبات controllability/observability دشوار است
+   - **راه‌حل**: استفاده از ابزارهای آماده مانند SCOAP
+
+4. **نیاز به GPU قدرتمند**: برای DNN feature extraction
+   - **راه‌حل**: استفاده از Google Colab یا AWS
+
+### **توصیه‌های عملی**:
+
+1. **شروع با Proof of Concept**: ابتدا با 5 مدار و 50 پیاده‌سازی شروع کنید
+2. **اتوماسیون**: تمام مراحل را با اسکریپت خودکار کنید
+3. **ذخیره‌سازی مرحله‌ای**: نتایج هر مرحله را ذخیره کنید
+4. **مستندسازی**: کد و فرآیند را به خوبی مستند کنید
+
+این راهنما تمام مراحل پیاده‌سازی را به صورت تخصصی و مرحله‌به‌مرحله توضیح داده است. برای سؤالات بیشتر یا جزئیات هر بخش خاص، می‌توانید بپرسید.
+
+[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/73095815/c35c7c03-3882-48a7-853c-c2ba9b707a6f/7.pdf)
