@@ -8,7 +8,10 @@ from matplotlib.colors import Normalize
 import matplotlib.cm as cm
 
 # ==================== تنظیمات ====================
-DATASET_PATH = "../data/dataset.csv"
+# DATASET_PATH = "../data/dataset.csv"
+# DATASET_PATH = "../data/dataset.csv"
+DATASET_PATH = "../dataset/dataset_complete.csv"
+
 OUTPUT_DIR = "../data/images"
 IMG_SIZE = (224, 224)
 GRID_SIZE = 32  # سایز گرید اولیه (مثلا 32x32) که بعدا به 224x224 تبدیل و مات می‌شود
