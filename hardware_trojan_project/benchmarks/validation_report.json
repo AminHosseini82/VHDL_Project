@@ -222,9 +222,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s208.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -244,9 +244,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s27.v",
       "module_name": "s27",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -266,9 +266,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s298.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -288,9 +288,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s344.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -310,9 +310,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s349.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -332,9 +332,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s382.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -354,9 +354,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s386.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -376,9 +376,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s400.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -398,9 +398,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s420.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -420,9 +420,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s444.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -442,9 +442,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s510.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -464,9 +464,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s526.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -486,9 +486,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s641.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -508,9 +508,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s713.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [
@@ -530,9 +530,9 @@
       "filepath": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s953.v",
       "module_name": "bench_seq",
       "inputs": [
-        "in",
         "clk",
-        "reset"
+        "reset",
+        "in"
       ],
       "num_inputs": 3,
       "outputs": [

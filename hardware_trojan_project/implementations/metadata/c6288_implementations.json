@@ -1,7 +1,7 @@
 {
   "circuit_name": "c6288",
   "total_implementations": 400,
-  "generated_at": "2025-12-17T11:04:02.725591",
+  "generated_at": "2025-12-27T00:41:37.187950",
   "implementations": [
     {
       "circuit_name": "c6288",
@@ -16,7 +16,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "c9f3d4fb686fe953"
     },
     {
@@ -32,7 +32,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "6f19077663bae896"
     },
     {
@@ -48,7 +48,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "d230ec436eeba987"
     },
     {
@@ -64,7 +64,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "f404006c4f74785d"
     },
     {
@@ -80,7 +80,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "9df7fc9f7a87576a"
     },
     {
@@ -96,7 +96,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "2af69fe2f6083313"
     },
     {
@@ -112,7 +112,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "23a3f4536f9ef1a3"
     },
     {
@@ -128,7 +128,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "d5d031c8ee1bd5c3"
     },
     {
@@ -144,7 +144,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "28b4b5393d1cb3e7"
     },
     {
@@ -160,7 +160,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "76f3772b25d1b686"
     },
     {
@@ -176,7 +176,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "0f972f8fd2c2084d"
     },
     {
@@ -192,7 +192,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "87a51a94720d6314"
     },
     {
@@ -208,7 +208,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "33fa06634c2aee0b"
     },
     {
@@ -224,7 +224,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "974bd2172290b87d"
     },
     {
@@ -240,7 +240,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "c6d068feadb9658d"
     },
     {
@@ -256,7 +256,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "b3a75696341646c0"
     },
     {
@@ -272,7 +272,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "1b7d38b7c1caf7db"
     },
     {
@@ -288,7 +288,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "b2d22249ffdf723c"
     },
     {
@@ -304,7 +304,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "c1b90038eb48a95d"
     },
     {
@@ -320,7 +320,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "829b24ed4c296d24"
     },
     {
@@ -336,7 +336,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "f1f8b0a3bd8f085a"
     },
     {
@@ -352,7 +352,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "35945b740ca07461"
     },
     {
@@ -368,7 +368,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "da6d20ace012f31b"
     },
     {
@@ -384,7 +384,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "63afc929cfee3eb1"
     },
     {
@@ -400,7 +400,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "080a2432915be295"
     },
     {
@@ -416,7 +416,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "67789b49f1c526f9"
     },
     {
@@ -432,7 +432,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "421c42e94ec98f25"
     },
     {
@@ -448,7 +448,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "49e18c61fa4a6bf7"
     },
     {
@@ -464,7 +464,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "d2b0a7f8d8367cff"
     },
     {
@@ -480,7 +480,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "4bf48feca8cda8b3"
     },
     {
@@ -496,7 +496,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "240c651bac420771"
     },
     {
@@ -512,7 +512,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "467c666bee95b80a"
     },
     {
@@ -528,7 +528,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "e35e6db4def9e233"
     },
     {
@@ -544,7 +544,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "72db0f82df7f45b1"
     },
     {
@@ -560,7 +560,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "e56be6a80aa5960e"
     },
     {
@@ -576,7 +576,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "acdbe5a509a94f5f"
     },
     {
@@ -592,7 +592,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "133f8f320c8624b2"
     },
     {
@@ -608,7 +608,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "91fa906891fdf603"
     },
     {
@@ -624,7 +624,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "03f8814c4f28268e"
     },
     {
@@ -640,7 +640,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "8b2af4e3f1fe534a"
     },
     {
@@ -656,7 +656,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "bec0059be76e40cc"
     },
     {
@@ -672,7 +672,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.716597",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "d888c4b7d4d95af4"
     },
     {
@@ -688,7 +688,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "48043ea623a75e77"
     },
     {
@@ -704,7 +704,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "b234a4f9d77d7f04"
     },
     {
@@ -720,7 +720,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "c49bfad4a6b18634"
     },
     {
@@ -736,7 +736,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "7fc8580e785dd7b9"
     },
     {
@@ -752,7 +752,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "097377a232e1c8a2"
     },
     {
@@ -768,7 +768,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "15af82d7293efcd1"
     },
     {
@@ -784,7 +784,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "06f398fac793c70f"
     },
     {
@@ -800,7 +800,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "7addee7d3846e7f1"
     },
     {
@@ -816,7 +816,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "a6e62132cfd25128"
     },
     {
@@ -832,7 +832,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "f5d219cf0e7fb247"
     },
     {
@@ -848,7 +848,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "879dd41a4ab6d824"
     },
     {
@@ -864,7 +864,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "01bb8fa2fb22b89b"
     },
     {
@@ -880,7 +880,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "6c7afde44d3a8ff6"
     },
     {
@@ -896,7 +896,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "facf6c6113dc8c97"
     },
     {
@@ -912,7 +912,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "3a9aae63dfd4116e"
     },
     {
@@ -928,7 +928,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "75569dd8e2adfebd"
     },
     {
@@ -944,7 +944,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "b1f02110b8e95de0"
     },
     {
@@ -960,7 +960,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "167acf1574cf8716"
     },
     {
@@ -976,7 +976,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "859c296c33cdeb7f"
     },
     {
@@ -992,7 +992,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "92e9a00a0aaadcb6"
     },
     {
@@ -1008,7 +1008,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "e4e1745355fb4f51"
     },
     {
@@ -1024,7 +1024,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "1d5bf1f4d893961a"
     },
     {
@@ -1040,7 +1040,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "4fe34ee3ca4ebea1"
     },
     {
@@ -1056,7 +1056,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "4b0007870099b935"
     },
     {
@@ -1072,7 +1072,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "1e4eab06dc50f199"
     },
     {
@@ -1088,7 +1088,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "e94c83aa48098a6e"
     },
     {
@@ -1104,7 +1104,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "03994e4ae0dc15dd"
     },
     {
@@ -1120,7 +1120,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "4524b53fa015ac0c"
     },
     {
@@ -1136,7 +1136,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "de160a5a7758efac"
     },
     {
@@ -1152,7 +1152,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "b1dc4784beacf706"
     },
     {
@@ -1168,7 +1168,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "541396ae43553d57"
     },
     {
@@ -1184,7 +1184,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "beb668f8a5016f92"
     },
     {
@@ -1200,7 +1200,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "ab3f8ab57935c758"
     },
     {
@@ -1216,7 +1216,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "76139eba4e7251ff"
     },
     {
@@ -1232,7 +1232,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "ad919da2118af45c"
     },
     {
@@ -1248,7 +1248,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "854c9a801590b55a"
     },
     {
@@ -1264,7 +1264,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "fc71f51b8421bcdc"
     },
     {
@@ -1280,7 +1280,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.182953",
       "config_hash": "23f7d946fd0e39d9"
     },
     {
@@ -1296,7 +1296,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "64f334d8d9670bc2"
     },
     {
@@ -1312,7 +1312,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "522bde2979fa4b73"
     },
     {
@@ -1328,7 +1328,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "45556235cbde1697"
     },
     {
@@ -1344,7 +1344,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "289823a824e36b3e"
     },
     {
@@ -1360,7 +1360,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "4945f75a4258d815"
     },
     {
@@ -1376,7 +1376,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "b8a1ba27475a3bab"
     },
     {
@@ -1392,7 +1392,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "96d569898b20207c"
     },
     {
@@ -1408,7 +1408,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "922a89312b1a65e0"
     },
     {
@@ -1424,7 +1424,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "8b404835257d0750"
     },
     {
@@ -1440,7 +1440,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "2a1767a60be91b1e"
     },
     {
@@ -1456,7 +1456,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "cb4470a7f4973ff0"
     },
     {
@@ -1472,7 +1472,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "4ca5cdd632607298"
     },
     {
@@ -1488,7 +1488,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "6e9eca3967ee813a"
     },
     {
@@ -1504,7 +1504,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "f768996ec3561814"
     },
     {
@@ -1520,7 +1520,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "7297389c3ba77674"
     },
     {
@@ -1536,7 +1536,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "67a12e586cf988b1"
     },
     {
@@ -1552,7 +1552,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "298cf9e2365fa702"
     },
     {
@@ -1568,7 +1568,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "f0fa2b7903203456"
     },
     {
@@ -1584,7 +1584,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "a3fe7642f9df83a9"
     },
     {
@@ -1600,7 +1600,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "8e85a7be61af0745"
     },
     {
@@ -1616,7 +1616,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "0f56f19d8bc4b6a6"
     },
     {
@@ -1632,7 +1632,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "a6b011dacc006eaf"
     },
     {
@@ -1648,7 +1648,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "703615bdec34990a"
     },
     {
@@ -1664,7 +1664,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ab9b1b07f3b3239f"
     },
     {
@@ -1680,7 +1680,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "3a840443ab1debe0"
     },
     {
@@ -1696,7 +1696,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ec1245fc0475b758"
     },
     {
@@ -1712,7 +1712,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ac4486b31bcaec36"
     },
     {
@@ -1728,7 +1728,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "f902be34f8b44d72"
     },
     {
@@ -1744,7 +1744,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "24e5efa5f1d594aa"
     },
     {
@@ -1760,7 +1760,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "179df8cc9534ae33"
     },
     {
@@ -1776,7 +1776,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "76c836f8063606eb"
     },
     {
@@ -1792,7 +1792,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "baa826e4bdca0774"
     },
     {
@@ -1808,7 +1808,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ffa61400ead499d8"
     },
     {
@@ -1824,7 +1824,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "c6cbd81f2a556515"
     },
     {
@@ -1840,7 +1840,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "dc3953d73b303f7e"
     },
     {
@@ -1856,7 +1856,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ec77eecc22b2df56"
     },
     {
@@ -1872,7 +1872,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "ca16c650304a0f87"
     },
     {
@@ -1888,7 +1888,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "51c10ee95fd8f8cd"
     },
     {
@@ -1904,7 +1904,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "344a7895ee83d1b6"
     },
     {
@@ -1920,7 +1920,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "40160c02a2aedc13"
     },
     {
@@ -1936,7 +1936,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "60c6aaaf06c960e6"
     },
     {
@@ -1952,7 +1952,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "3a2af79a404e628e"
     },
     {
@@ -1968,7 +1968,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "9155c05a041ddda1"
     },
     {
@@ -1984,7 +1984,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "79c5a496262c3eed"
     },
     {
@@ -2000,7 +2000,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "6b01e77066d60098"
     },
     {
@@ -2016,7 +2016,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "232e1ffc7117c51b"
     },
     {
@@ -2032,7 +2032,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "061e213479edfef8"
     },
     {
@@ -2048,7 +2048,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "12683930091691f0"
     },
     {
@@ -2064,7 +2064,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "22b77db63225ee60"
     },
     {
@@ -2080,7 +2080,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "cbcbfc4a094d97e6"
     },
     {
@@ -2096,7 +2096,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "5302e87dba68ddff"
     },
     {
@@ -2112,7 +2112,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "672ede76db30fdd0"
     },
     {
@@ -2128,7 +2128,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.183952",
       "config_hash": "724a5cb0c5dfaa38"
     },
     {
@@ -2144,7 +2144,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "bfab0e3e2574d7e6"
     },
     {
@@ -2160,7 +2160,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "92c90e2203de7ee3"
     },
     {
@@ -2176,7 +2176,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "dd06ddac809f1f87"
     },
     {
@@ -2192,7 +2192,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "3176596a875bc370"
     },
     {
@@ -2208,7 +2208,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "35a065ff2bd29b77"
     },
     {
@@ -2224,7 +2224,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "f5cf865ca5316493"
     },
     {
@@ -2240,7 +2240,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "c3501798c72ca2ca"
     },
     {
@@ -2256,7 +2256,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.717592",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "5b64f0bc7891209e"
     },
     {
@@ -2272,7 +2272,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "da8ebbdf76a1afd7"
     },
     {
@@ -2288,7 +2288,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "d683f0b49a0c7238"
     },
     {
@@ -2304,7 +2304,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "38994903e07af991"
     },
     {
@@ -2320,7 +2320,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "17c2df4b35c710cc"
     },
     {
@@ -2336,7 +2336,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "361e249fc4d1d578"
     },
     {
@@ -2352,7 +2352,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "94d9935faaa87eef"
     },
     {
@@ -2368,7 +2368,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "2167c04a498c1fdf"
     },
     {
@@ -2384,7 +2384,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "f4a39563727ba71c"
     },
     {
@@ -2400,7 +2400,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "e8ba1754efb0c3e0"
     },
     {
@@ -2416,7 +2416,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "dd194aa816ad8e21"
     },
     {
@@ -2432,7 +2432,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "17d99e201781b83d"
     },
     {
@@ -2448,7 +2448,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "9da3441877e52691"
     },
     {
@@ -2464,7 +2464,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "504125346da15a97"
     },
     {
@@ -2480,7 +2480,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "e90f82da5922345c"
     },
     {
@@ -2496,7 +2496,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "689f8cb4b6969d05"
     },
     {
@@ -2512,7 +2512,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "16f143ce22b4f9d3"
     },
     {
@@ -2528,7 +2528,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "d7cc9f03ad547242"
     },
     {
@@ -2544,7 +2544,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "97674cf46faa7850"
     },
     {
@@ -2560,7 +2560,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "38eb594014bf8e87"
     },
     {
@@ -2576,7 +2576,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "d759fdd01860a3cb"
     },
     {
@@ -2592,7 +2592,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "e06d939e73dd41b7"
     },
     {
@@ -2608,7 +2608,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "abc5568e1b2f8995"
     },
     {
@@ -2624,7 +2624,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "b8767da61fb75a4e"
     },
     {
@@ -2640,7 +2640,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "fbd234ed212ad3bd"
     },
     {
@@ -2656,7 +2656,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "5b4cb05b09cc3b7e"
     },
     {
@@ -2672,7 +2672,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.184953",
       "config_hash": "e2f1c1ba9cb7bd7a"
     },
     {
@@ -2688,7 +2688,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f2b9cc62d0529cac"
     },
     {
@@ -2704,7 +2704,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "24762046866abbdf"
     },
     {
@@ -2720,7 +2720,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "aa080a9faeb82f12"
     },
     {
@@ -2736,7 +2736,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "c088c15e12345146"
     },
     {
@@ -2752,7 +2752,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "24a98cec549666fc"
     },
     {
@@ -2768,7 +2768,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "2c06d0ff7fdc723d"
     },
     {
@@ -2784,7 +2784,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "140f153d74a0c5d1"
     },
     {
@@ -2800,7 +2800,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.718590",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "4193c350202fee2d"
     },
     {
@@ -2816,7 +2816,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "3335963728d69cc6"
     },
     {
@@ -2832,7 +2832,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "cbdd8447fb7dc6e3"
     },
     {
@@ -2848,7 +2848,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f5ba302b0b264bf0"
     },
     {
@@ -2864,7 +2864,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "153e59a88bed3e5f"
     },
     {
@@ -2880,7 +2880,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "d842f71d3fdc88e3"
     },
     {
@@ -2896,7 +2896,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "52bb8ba5465f2a93"
     },
     {
@@ -2912,7 +2912,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "1a60399f0f2b0442"
     },
     {
@@ -2928,7 +2928,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "e48648662c21b28c"
     },
     {
@@ -2944,7 +2944,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "ea7437d344da8ecd"
     },
     {
@@ -2960,7 +2960,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "dc4b581793a9afe7"
     },
     {
@@ -2976,7 +2976,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "171061586b527ddd"
     },
     {
@@ -2992,7 +2992,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "87e4ecf6d0fc9198"
     },
     {
@@ -3008,7 +3008,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "86dd0dda5d2816bb"
     },
     {
@@ -3024,7 +3024,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "78a7060d8fec064c"
     },
     {
@@ -3040,7 +3040,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "7796f3e4ee075225"
     },
     {
@@ -3056,7 +3056,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "d56613cf86e1a513"
     },
     {
@@ -3072,7 +3072,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f0f0cd174c963809"
     },
     {
@@ -3088,7 +3088,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "608c2cadb6fb08ce"
     },
     {
@@ -3104,7 +3104,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "483c3ec89c8f8365"
     },
     {
@@ -3120,7 +3120,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "c3a5dbb73d55447c"
     },
     {
@@ -3136,7 +3136,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "5e02f04f87e961c2"
     },
     {
@@ -3152,7 +3152,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "b4b1abec7956324e"
     },
     {
@@ -3168,7 +3168,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "1263cb73a1221e17"
     },
     {
@@ -3184,7 +3184,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "707e4186b8c46d8f"
     },
     {
@@ -3200,7 +3200,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "b7b31a1d1957ecb3"
     },
     {
@@ -3216,7 +3216,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f14190ed679ef89e"
     },
     {
@@ -3232,7 +3232,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "68cf9ea5fa527f80"
     },
     {
@@ -3248,7 +3248,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "340d9f4a799d8433"
     },
     {
@@ -3264,7 +3264,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "ccc8512a756d65c3"
     },
     {
@@ -3280,7 +3280,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "305e7b3c4d0aef27"
     },
     {
@@ -3296,7 +3296,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "441b90e1a46f4d4a"
     },
     {
@@ -3312,7 +3312,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "5f9caf6cc1c1204d"
     },
     {
@@ -3328,7 +3328,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f94e01e28a85c219"
     },
     {
@@ -3344,7 +3344,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "5f5178522aab721b"
     },
     {
@@ -3360,7 +3360,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "1e0ba8ad931bfd99"
     },
     {
@@ -3376,7 +3376,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.719591",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "241d2f643721f8b9"
     },
     {
@@ -3392,7 +3392,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "17a948c6f6ab1c36"
     },
     {
@@ -3408,7 +3408,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "f8c3cb8fe72ad84d"
     },
     {
@@ -3424,7 +3424,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "c5ece60343629d77"
     },
     {
@@ -3440,7 +3440,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "b24f07dc46731693"
     },
     {
@@ -3456,7 +3456,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "c2d305ac1bc9bf69"
     },
     {
@@ -3472,7 +3472,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "49cff05192aabd8a"
     },
     {
@@ -3488,7 +3488,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "9b5d570eef2e473f"
     },
     {
@@ -3504,7 +3504,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "76189c6d661f5aea"
     },
     {
@@ -3520,7 +3520,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "4eed218cf18e5b8c"
     },
     {
@@ -3536,7 +3536,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "87c052aa6582e31b"
     },
     {
@@ -3552,7 +3552,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "a6423e89e4ed152e"
     },
     {
@@ -3568,7 +3568,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "731a1e15c7214956"
     },
     {
@@ -3584,7 +3584,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "01af7768e5d31010"
     },
     {
@@ -3600,7 +3600,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "266bcf9bc5e8dde2"
     },
     {
@@ -3616,7 +3616,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "85701602ae9d6328"
     },
     {
@@ -3632,7 +3632,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "afa700081ee03d9f"
     },
     {
@@ -3648,7 +3648,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "020fb1a89f4d437e"
     },
     {
@@ -3664,7 +3664,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "7fc123fad37020b7"
     },
     {
@@ -3680,7 +3680,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "3c90fac16eff959d"
     },
     {
@@ -3696,7 +3696,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "b7516c0a2d6f9f7d"
     },
     {
@@ -3712,7 +3712,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "4aef619a7f872059"
     },
     {
@@ -3728,7 +3728,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "7f6b2627864c563b"
     },
     {
@@ -3744,7 +3744,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "83382abc99f78121"
     },
     {
@@ -3760,7 +3760,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "d2855a795add9da1"
     },
     {
@@ -3776,7 +3776,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "1ae73fd411c4145f"
     },
     {
@@ -3792,7 +3792,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "fde616867f29bbc6"
     },
     {
@@ -3808,7 +3808,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "3f62ec20ee7b6c31"
     },
     {
@@ -3824,7 +3824,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "64147013dd1608df"
     },
     {
@@ -3840,7 +3840,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "6bbdab3e7c630cfb"
     },
     {
@@ -3856,7 +3856,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "784c0c31ad2c1ca4"
     },
     {
@@ -3872,7 +3872,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "9f69662a4a2e99c1"
     },
     {
@@ -3888,7 +3888,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "d91dc59ca73edd7e"
     },
     {
@@ -3904,7 +3904,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "696d4660c6556140"
     },
     {
@@ -3920,7 +3920,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "8d8cd5db8ba7a213"
     },
     {
@@ -3936,7 +3936,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "4a38622a4f162398"
     },
     {
@@ -3952,7 +3952,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "6656bf8a9a51ce1a"
     },
     {
@@ -3968,7 +3968,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.720589",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "a4c708952443eb5c"
     },
     {
@@ -3984,7 +3984,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "a25e9fbba85b97ae"
     },
     {
@@ -4000,7 +4000,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "1cb130e72a99af01"
     },
     {
@@ -4016,7 +4016,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "b17bafc3ae089060"
     },
     {
@@ -4032,7 +4032,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "2fd61a7d1edcaca8"
     },
     {
@@ -4048,7 +4048,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.185950",
       "config_hash": "015996b5c8fce01f"
     },
     {
@@ -4064,7 +4064,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "17675de03ae90aa5"
     },
     {
@@ -4080,7 +4080,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "924f697baa3eac25"
     },
     {
@@ -4096,7 +4096,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "e55f11afb30f0b3c"
     },
     {
@@ -4112,7 +4112,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "43cbc9ebeffe7635"
     },
     {
@@ -4128,7 +4128,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "d5fff362f2778575"
     },
     {
@@ -4144,7 +4144,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "7efe01072c4fbf70"
     },
     {
@@ -4160,7 +4160,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "06a78a71bf0cf99e"
     },
     {
@@ -4176,7 +4176,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "737216c5c92050ab"
     },
     {
@@ -4192,7 +4192,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "672836f3db118775"
     },
     {
@@ -4208,7 +4208,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "0b64a26a6b4e7631"
     },
     {
@@ -4224,7 +4224,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "726c46dc379c5cfd"
     },
     {
@@ -4240,7 +4240,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b70e327f4d670f3d"
     },
     {
@@ -4256,7 +4256,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "dbed0f1a1231f85b"
     },
     {
@@ -4272,7 +4272,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "5ed20d83dbfcc21f"
     },
     {
@@ -4288,7 +4288,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "4aa05e9a81248706"
     },
     {
@@ -4304,7 +4304,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "95331425b684ee34"
     },
     {
@@ -4320,7 +4320,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "216935725b4dfb10"
     },
     {
@@ -4336,7 +4336,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "274039b600935fb0"
     },
     {
@@ -4352,7 +4352,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "6175142cd7fd142c"
     },
     {
@@ -4368,7 +4368,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "d58408b4e713f9e2"
     },
     {
@@ -4384,7 +4384,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "032abd12e462216d"
     },
     {
@@ -4400,7 +4400,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "be62731eb006ee94"
     },
     {
@@ -4416,7 +4416,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "4ad3db94cdafdf56"
     },
     {
@@ -4432,7 +4432,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "747800e65953f67a"
     },
     {
@@ -4448,7 +4448,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ffce992916de2580"
     },
     {
@@ -4464,7 +4464,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c9ed662157b81cd9"
     },
     {
@@ -4480,7 +4480,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "3d5528396c32f2da"
     },
     {
@@ -4496,7 +4496,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b91c81af082e5070"
     },
     {
@@ -4512,7 +4512,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "4e1879bbd3d4b232"
     },
     {
@@ -4528,7 +4528,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "82af17df54944d14"
     },
     {
@@ -4544,7 +4544,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ee2b07b4dcd6bfc6"
     },
     {
@@ -4560,7 +4560,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.721588",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "e37492fafae48dd6"
     },
     {
@@ -4576,7 +4576,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "2f7b8caa751544d0"
     },
     {
@@ -4592,7 +4592,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c570c328c07e6f07"
     },
     {
@@ -4608,7 +4608,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "6b9787273dcc99b6"
     },
     {
@@ -4624,7 +4624,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "1b4685cb31e091ee"
     },
     {
@@ -4640,7 +4640,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "9d5d4edf0a132f88"
     },
     {
@@ -4656,7 +4656,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "370bceb52dcc3c31"
     },
     {
@@ -4672,7 +4672,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "116fad5b3926999a"
     },
     {
@@ -4688,7 +4688,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "d681bf86480830ab"
     },
     {
@@ -4704,7 +4704,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c2d93ae0a7693c3f"
     },
     {
@@ -4720,7 +4720,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "2c79e50ffe03a08d"
     },
     {
@@ -4736,7 +4736,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "e97d45bb54923098"
     },
     {
@@ -4752,7 +4752,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "e76e846f5dda98fe"
     },
     {
@@ -4768,7 +4768,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "9e436dfa1735ebbe"
     },
     {
@@ -4784,7 +4784,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "2fd5586a9791e044"
     },
     {
@@ -4800,7 +4800,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "62754d03b1419201"
     },
     {
@@ -4816,7 +4816,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "d0bb171e6fc766a4"
     },
     {
@@ -4832,7 +4832,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "7033094e2e1dffa2"
     },
     {
@@ -4848,7 +4848,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "91ae399c8a8185ed"
     },
     {
@@ -4864,7 +4864,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "fa86d72d98600b2b"
     },
     {
@@ -4880,7 +4880,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "3dfaa8c7680c7a5f"
     },
     {
@@ -4896,7 +4896,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "f773fb5481e76b7d"
     },
     {
@@ -4912,7 +4912,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "8f75549ad4bbc511"
     },
     {
@@ -4928,7 +4928,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "4bf06dabf68df79b"
     },
     {
@@ -4944,7 +4944,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "079f0954cbbcf3d4"
     },
     {
@@ -4960,7 +4960,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b806369e6cde767b"
     },
     {
@@ -4976,7 +4976,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b16aabe282f7f873"
     },
     {
@@ -4992,7 +4992,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "4fd0a29e4267cfd6"
     },
     {
@@ -5008,7 +5008,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "9cbe6e2ebb31a603"
     },
     {
@@ -5024,7 +5024,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "246974a9ab5decfb"
     },
     {
@@ -5040,7 +5040,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ff842d2bba98bd4b"
     },
     {
@@ -5056,7 +5056,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "13aa0460068b4f08"
     },
     {
@@ -5072,7 +5072,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "050615895fc7de5d"
     },
     {
@@ -5088,7 +5088,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "92f431b6b0a54d0e"
     },
     {
@@ -5104,7 +5104,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c26debde51425471"
     },
     {
@@ -5120,7 +5120,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "7f90312d7268e427"
     },
     {
@@ -5136,7 +5136,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.722590",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c0355c0637118a2c"
     },
     {
@@ -5152,7 +5152,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "5d5e8fb0f3d34e40"
     },
     {
@@ -5168,7 +5168,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "2f3c3e4767d9862f"
     },
     {
@@ -5184,7 +5184,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "81c658068b13bbab"
     },
     {
@@ -5200,7 +5200,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "686b7fac5c6d5a18"
     },
     {
@@ -5216,7 +5216,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "3f2b1840d21ca0e1"
     },
     {
@@ -5232,7 +5232,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "aa587ba5062b336f"
     },
     {
@@ -5248,7 +5248,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "3e26457b4a41dc12"
     },
     {
@@ -5264,7 +5264,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b536e61e3bdeb192"
     },
     {
@@ -5280,7 +5280,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "f32243a0c2492973"
     },
     {
@@ -5296,7 +5296,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "9d015dcd345ffa3b"
     },
     {
@@ -5312,7 +5312,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "36ac905b2af8ee26"
     },
     {
@@ -5328,7 +5328,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "435baac77a533f23"
     },
     {
@@ -5344,7 +5344,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c5c951703fec9a97"
     },
     {
@@ -5360,7 +5360,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "a336e6588ca55eea"
     },
     {
@@ -5376,7 +5376,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "749e5acb3a9bc588"
     },
     {
@@ -5392,7 +5392,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ebcea1b4c8d5725d"
     },
     {
@@ -5408,7 +5408,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "03c988b5d2362b60"
     },
     {
@@ -5424,7 +5424,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "6d6f951108080fee"
     },
     {
@@ -5440,7 +5440,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "52509285db3813b1"
     },
     {
@@ -5456,7 +5456,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "86bbef3a809bf285"
     },
     {
@@ -5472,7 +5472,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "f0b9a5bd4406e835"
     },
     {
@@ -5488,7 +5488,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ce295d57ab715ead"
     },
     {
@@ -5504,7 +5504,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "ec6f94d7c89f1177"
     },
     {
@@ -5520,7 +5520,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "b940f08b8ebab6cf"
     },
     {
@@ -5536,7 +5536,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "1e69ea9c57d583ea"
     },
     {
@@ -5552,7 +5552,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "2d6f8d75b34180d8"
     },
     {
@@ -5568,7 +5568,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "869c4a9cc30d8fed"
     },
     {
@@ -5584,7 +5584,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.723589",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "60690d564e70160d"
     },
     {
@@ -5600,7 +5600,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "f0fc9cdfefb4da86"
     },
     {
@@ -5616,7 +5616,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "05490cd210fefbec"
     },
     {
@@ -5632,7 +5632,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "dc94322594a3a744"
     },
     {
@@ -5648,7 +5648,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "901bbf6be6222ae4"
     },
     {
@@ -5664,7 +5664,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "c7ba7a62971cf7af"
     },
     {
@@ -5680,7 +5680,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.186953",
       "config_hash": "cea6d5e35131b406"
     },
     {
@@ -5696,7 +5696,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "70aa82c9a7e657cc"
     },
     {
@@ -5712,7 +5712,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "9388cbf558fb1878"
     },
     {
@@ -5728,7 +5728,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "94a705bd5af8eff1"
     },
     {
@@ -5744,7 +5744,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "612c9e4fac00d736"
     },
     {
@@ -5760,7 +5760,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "515803a45dba9c76"
     },
     {
@@ -5776,7 +5776,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "5a0ea8cb1058ae33"
     },
     {
@@ -5792,7 +5792,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "7b8026b67a62d3a0"
     },
     {
@@ -5808,7 +5808,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "15d13add39185380"
     },
     {
@@ -5824,7 +5824,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "a272ff6b4f2f5151"
     },
     {
@@ -5840,7 +5840,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "c27ed265d6711096"
     },
     {
@@ -5856,7 +5856,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "c81d01cb9a9a221d"
     },
     {
@@ -5872,7 +5872,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "2277fd97ded30979"
     },
     {
@@ -5888,7 +5888,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "b504be019a93d48f"
     },
     {
@@ -5904,7 +5904,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "81ae8e292dc67312"
     },
     {
@@ -5920,7 +5920,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "cfa21c16fd663709"
     },
     {
@@ -5936,7 +5936,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "993d8185f8db34cc"
     },
     {
@@ -5952,7 +5952,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "0a275612fca5f178"
     },
     {
@@ -5968,7 +5968,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "3dc036962ac0b79d"
     },
     {
@@ -5984,7 +5984,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "d23ccaa7ab393144"
     },
     {
@@ -6000,7 +6000,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "dfb6522df9965a70"
     },
     {
@@ -6016,7 +6016,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "b70bae062d2a42b3"
     },
     {
@@ -6032,7 +6032,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "c336e3845f2d051f"
     },
     {
@@ -6048,7 +6048,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "4702062020ff5af2"
     },
     {
@@ -6064,7 +6064,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "0603723c05195933"
     },
     {
@@ -6080,7 +6080,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "d39744624fc38487"
     },
     {
@@ -6096,7 +6096,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "eef7497f054366d8"
     },
     {
@@ -6112,7 +6112,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "ca6b2f8e364856ff"
     },
     {
@@ -6128,7 +6128,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.724596",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "4931295e835eac99"
     },
     {
@@ -6144,7 +6144,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "de96f089d9acc7b8"
     },
     {
@@ -6160,7 +6160,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.5,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "2cebe530f3259278"
     },
     {
@@ -6176,7 +6176,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "297340928a723610"
     },
     {
@@ -6192,7 +6192,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "32cb673ca8f5df24"
     },
     {
@@ -6208,7 +6208,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "c75df3b2ec55aa36"
     },
     {
@@ -6224,7 +6224,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "9d633320d66ca0d3"
     },
     {
@@ -6240,7 +6240,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.35,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "ec68d50b95c25978"
     },
     {
@@ -6256,7 +6256,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "c8fbc8c75dead242"
     },
     {
@@ -6272,7 +6272,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "dfcf8ca1b9c7ad0a"
     },
     {
@@ -6288,7 +6288,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "89f2e435fc7a4b70"
     },
     {
@@ -6304,7 +6304,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "14ada18c008de62a"
     },
     {
@@ -6320,7 +6320,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.6,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "44be253d9633b82a"
     },
     {
@@ -6336,7 +6336,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.09,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "b0b75493e746e31c"
     },
     {
@@ -6352,7 +6352,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.144,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "e2d60fcce11468c6"
     },
     {
@@ -6368,7 +6368,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.072,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "9dbb2d8b9e20e66e"
     },
     {
@@ -6384,7 +6384,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.063,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "89f5b6d0eb44bb5d"
     },
     {
@@ -6400,7 +6400,7 @@
       "estimated_gates": 9,
       "estimated_power_mw": 0.216,
       "estimated_delay_ns": 0.55,
-      "timestamp": "2025-12-17T11:04:02.725591",
+      "timestamp": "2025-12-27T00:41:37.187950",
       "config_hash": "0b3b344a675bb0eb"
     }
   ]
