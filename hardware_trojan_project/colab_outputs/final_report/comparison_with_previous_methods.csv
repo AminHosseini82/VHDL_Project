@@ -1,0 +1,6 @@
+Method,Test Accuracy (%),Rank,Improvement vs Previous Best
+Jahanirad et al. (2024) - Current Study,97.6,1,0.60%
+Trippel et al. (ICAS),72.0,2,0.60%
+Salmani & Tehranipoor,65.5,3,0.60%
+Bakhshozadeh & Jahanian (TVM),60.35,4,0.60%
+FASTrust,55.2,5,0.60%

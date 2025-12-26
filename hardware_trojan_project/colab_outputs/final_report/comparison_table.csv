@@ -1,0 +1,7 @@
+Method,Type,Train Acc (%),Val Acc (%),Test Acc (%),Precision (%),Recall (%),F1-Score (%)
+CNN (ResNet-18),Deep Learning,95.41,97.07,95.93,96.02,95.93,95.92
+Ensemble (Random Forest),Tree-based,100.00,97.47,97.60,-,-,-
+Ensemble (Gradient Boosting),Tree-based,99.99,97.47,97.07,-,-,-
+SVM,Kernel-based,98.31,97.13,97.27,-,-,-
+KNN (k=5),Instance-based,98.16,97.20,96.80,-,-,-
+Naive Bayes,Probabilistic,95.99,95.53,95.13,-,-,-

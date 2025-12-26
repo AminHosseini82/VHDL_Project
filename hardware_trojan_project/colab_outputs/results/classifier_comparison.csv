@@ -1,0 +1,6 @@
+Classifier,Train Acc (%),Val Acc (%),Test Acc (%)
+Ensemble (Random Forest),100.00,97.47,97.60
+Ensemble (Gradient Boosting),99.99,97.47,97.07
+SVM,98.31,97.13,97.27
+Naive Bayes,95.99,95.53,95.13
+KNN (k=5),98.16,97.20,96.80
