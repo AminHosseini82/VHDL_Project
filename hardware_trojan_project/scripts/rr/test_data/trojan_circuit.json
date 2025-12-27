@@ -1,0 +1,9 @@
+{
+    "circuit_name": "c_trojan_test_01",
+    "white_space_ratio": 0.15,
+    "routing_congestion": 0.92,
+    "observability_average": 0.1,
+    "cc0_average": 0.2,
+    "signal_activity": 0.05,
+    "vulnerability_label": "High"
+}
