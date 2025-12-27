@@ -1,0 +1,40 @@
+{
+  "project": "Hardware Trojan Vulnerability Assessment",
+  "stage": "Stage 1.2: Implementation Generation",
+  "generated_at": "2025-12-27T16:37:30.321858",
+  "statistics": {
+    "total_implementations": 0,
+    "circuits_processed": 0,
+    "combinations": 200
+  },
+  "configuration": {
+    "area_factors": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "placement_modes": [
+      "standard",
+      "timing_driven",
+      "congestion_driven",
+      "power_driven"
+    ],
+    "gate_design_styles": [
+      "complementary_logic",
+      "ratioed_logic",
+      "transmission_gate_logic",
+      "pass_transistor_logic",
+      "dynamic_logic"
+    ],
+    "technology_node_nm": 90,
+    "supply_voltage_v": 1.2
+  },
+  "circuits": {}
+}
