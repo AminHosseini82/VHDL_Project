@@ -1,0 +1,207 @@
+{
+  "iscas85": {
+    "count": 10,
+    "circuits": {
+      "c17": {
+        "gates": 11,
+        "inputs": 5,
+        "outputs": 2,
+        "type": "combinational"
+      },
+      "c432": {
+        "gates": 160,
+        "inputs": 36,
+        "outputs": 7,
+        "type": "combinational"
+      },
+      "c880": {
+        "gates": 383,
+        "inputs": 60,
+        "outputs": 26,
+        "type": "combinational"
+      },
+      "c1355": {
+        "gates": 546,
+        "inputs": 41,
+        "outputs": 32,
+        "type": "combinational"
+      },
+      "c1908": {
+        "gates": 880,
+        "inputs": 33,
+        "outputs": 25,
+        "type": "combinational"
+      },
+      "c2670": {
+        "gates": 1193,
+        "inputs": 157,
+        "outputs": 64,
+        "type": "combinational"
+      },
+      "c3540": {
+        "gates": 1669,
+        "inputs": 50,
+        "outputs": 22,
+        "type": "combinational"
+      },
+      "c5315": {
+        "gates": 2307,
+        "inputs": 178,
+        "outputs": 123,
+        "type": "combinational"
+      },
+      "c6288": {
+        "gates": 2416,
+        "inputs": 32,
+        "outputs": 32,
+        "type": "combinational"
+      },
+      "c7552": {
+        "gates": 3512,
+        "inputs": 207,
+        "outputs": 108,
+        "type": "combinational"
+      }
+    },
+    "directory": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog"
+  },
+  "iscas89": {
+    "count": 15,
+    "circuits": {
+      "s27": {
+        "gates": 10,
+        "inputs": 4,
+        "outputs": 1,
+        "flip_flops": 3,
+        "type": "sequential"
+      },
+      "s208": {
+        "gates": 104,
+        "inputs": 12,
+        "outputs": 1,
+        "flip_flops": 8,
+        "type": "sequential"
+      },
+      "s298": {
+        "gates": 119,
+        "inputs": 3,
+        "outputs": 6,
+        "flip_flops": 14,
+        "type": "sequential"
+      },
+      "s344": {
+        "gates": 160,
+        "inputs": 9,
+        "outputs": 11,
+        "flip_flops": 15,
+        "type": "sequential"
+      },
+      "s349": {
+        "gates": 161,
+        "inputs": 9,
+        "outputs": 11,
+        "flip_flops": 15,
+        "type": "sequential"
+      },
+      "s382": {
+        "gates": 158,
+        "inputs": 3,
+        "outputs": 6,
+        "flip_flops": 21,
+        "type": "sequential"
+      },
+      "s386": {
+        "gates": 159,
+        "inputs": 7,
+        "outputs": 7,
+        "flip_flops": 6,
+        "type": "sequential"
+      },
+      "s400": {
+        "gates": 202,
+        "inputs": 3,
+        "outputs": 6,
+        "flip_flops": 21,
+        "type": "sequential"
+      },
+      "s420": {
+        "gates": 218,
+        "inputs": 18,
+        "outputs": 1,
+        "flip_flops": 16,
+        "type": "sequential"
+      },
+      "s444": {
+        "gates": 181,
+        "inputs": 3,
+        "outputs": 6,
+        "flip_flops": 21,
+        "type": "sequential"
+      },
+      "s510": {
+        "gates": 211,
+        "inputs": 19,
+        "outputs": 7,
+        "flip_flops": 6,
+        "type": "sequential"
+      },
+      "s526": {
+        "gates": 245,
+        "inputs": 3,
+        "outputs": 6,
+        "flip_flops": 21,
+        "type": "sequential"
+      },
+      "s641": {
+        "gates": 290,
+        "inputs": 19,
+        "outputs": 1,
+        "flip_flops": 19,
+        "type": "sequential"
+      },
+      "s713": {
+        "gates": 375,
+        "inputs": 19,
+        "outputs": 11,
+        "flip_flops": 19,
+        "type": "sequential"
+      },
+      "s953": {
+        "gates": 450,
+        "inputs": 16,
+        "outputs": 1,
+        "flip_flops": 29,
+        "type": "sequential"
+      }
+    },
+    "directory": "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog"
+  },
+  "total_benchmarks": 25,
+  "created_files": [
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c17.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c432.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c880.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c1355.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c1908.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c2670.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c3540.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c5315.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c6288.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas85\\verilog\\c7552.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s27.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s208.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s298.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s344.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s349.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s382.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s386.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s400.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s420.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s444.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s510.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s526.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s641.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s713.v",
+    "F:\\Amin_Projects\\University\\VHDL\\hardware_trojan_project\\benchmarks\\iscas89\\verilog\\s953.v"
+  ]
+}
