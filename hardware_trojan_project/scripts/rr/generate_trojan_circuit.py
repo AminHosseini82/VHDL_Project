@@ -15,15 +15,33 @@ def generate_infected_circuit():
     # 2. مشاهده‌پذیری پایین (Observability) -> تروجان مخفی است
     # 3. فضای سفید کم (White Space) -> تروجان در فضای خالی جا سازی شده
     
+    # infected_features = {
+    #     "circuit_name": "c_trojan_test_01",
+    #     "white_space_ratio": 0.15,        # فضای خالی خیلی کم (مشکوک)
+    #     "routing_congestion": 0.92,       # تراکم بسیار بالا (خطرناک)
+    #     "observability_average": 0.10,    # مشاهده‌پذیری بسیار پایین (مخفی)
+    #     "cc0_average": 0.20,              # کنترل‌پذیری پایین
+    #     "signal_activity": 0.05,          # فعالیت سیگنال کم (تریگر تروجان معمولا خاموش است)
+    #     "vulnerability_label": "High"     # برچسب واقعی (برای مقایسه)
+    # }
+    
+    
     infected_features = {
         "circuit_name": "c_trojan_test_01",
-        "white_space_ratio": 0.15,        # فضای خالی خیلی کم (مشکوک)
-        "routing_congestion": 0.92,       # تراکم بسیار بالا (خطرناک)
-        "observability_average": 0.10,    # مشاهده‌پذیری بسیار پایین (مخفی)
-        "cc0_average": 0.20,              # کنترل‌پذیری پایین
-        "signal_activity": 0.05,          # فعالیت سیگنال کم (تریگر تروجان معمولا خاموش است)
-        "vulnerability_label": "High"     # برچسب واقعی (برای مقایسه)
+        "white_space_ratio": 0.05,        # فضای خالی تقریبا صفر (بسیار مشکوک)
+        "routing_congestion": 0.99,       # تراکم ماکزیمم (ترافیک وحشتناک)
+        "observability_average": 0.01,    # تقریبا غیرقابل مشاهده (کاملا مخفی)
+        "cc0_average": 0.05,              # کنترل‌ناپذیر
+        "signal_activity": 0.01,          # تقریبا خاموش
+        "vulnerability_label": "High"
     }
+
+    
+    
+    
+    
+    
+    
     
     # ذخیره در فایل JSON
     file_path = os.path.join(OUTPUT_DIR, "trojan_circuit.json")
